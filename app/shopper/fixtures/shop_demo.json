@@ -1,0 +1,23 @@
+[
+  {
+    "model": "shopper.shop",
+    "pk": 1,
+    "fields": {
+      "shop_id": "um"
+    }
+  },
+  {
+    "model": "shopper.shop",
+    "pk": 1,
+    "fields": {
+      "shop_id": "ms"
+    }
+  },
+  {
+    "model": "shopper.shop",
+    "pk": 3,
+    "fields": {
+      "shop_id": "ps"
+    }
+  }
+]
