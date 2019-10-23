@@ -1,0 +1,57 @@
+#docker-compose.yml
+version: '3'
+
+services:
+  api:
+    # working_dir: /app
+    build: ./app 
+    volumes:
+      - ./app:/app
+      - ./conf.d/uwsgi.ini:/uwsgi/uwsgi.ini
+    env_file:
+      - ./env/.dev
+      - ./env/.tiger_conf
+    links:
+      - rabbitmq
+    entrypoint: /app/dev-entrypoint.sh
+  nginx:
+    image: nginx
+    volumes:
+      - ./conf.d/nginx.conf:/etc/nginx/conf.d/nginx.conf
+      - ./app:/app
+    ports:
+      - "${PORT}:8000"
+    links:
+      - api
+  rabbitmq:
+    image: rabbitmq:3.7.3-management
+    env_file:
+      - ./env/.dev
+      - ./env/.tiger_conf
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+  celery:
+    build: ./app 
+    env_file:
+      - ./env/.dev
+      - ./env/.tiger_conf
+    volumes:
+      - ./app:/app
+      - ./conf.d/uwsgi.ini:/uwsgi/uwsgi.ini
+    entrypoint: /app/celery-entrypoint.sh
+    links:
+      - rabbitmq
+  tiger-db:
+    image: postgres:9.6.3-alpine
+    restart: always
+    ports:
+      - "5432:5432"
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    env_file:
+      - ./env/.dev
+      - ./env/.tiger_conf
+
+volumes:
+  db-data:  # shopper db

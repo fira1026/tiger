@@ -1,0 +1,11 @@
+uwsgi==2.0.18
+Django==2.2
+psycopg2==2.8.3
+requests==2.21.0
+python-dateutil==2.8.0
+python-telegram-bot==11.1.0
+pytz==2019.1
+django-split-settings==0.3.0
+djangorestframework==3.9.3
+celery==4.1.1
+entrypoints==0.2.3

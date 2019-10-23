@@ -1,0 +1,79 @@
+[
+  {
+    "model": "shopper.product",
+    "pk": 1,
+    "fields": {
+      "product_id": "1",
+      "stock_pcs": 6,
+      "price": 150,
+      "shop_id": "um",
+      "vip": "False"
+    }
+  },
+  {
+    "model": "shopper.product",
+    "pk": 2,
+    "fields": {
+      "product_id": "2",
+      "stock_pcs": 10,
+      "price": 110,
+      "shop_id": "ms",
+      "vip": "False"
+    }
+  },
+  {
+    "model": "shopper.product",
+    "pk": 3,
+    "fields": {
+      "product_id": "3",
+      "stock_pcs": 20,
+      "price": 900,
+      "shop_id": "ps",
+      "vip": "False"
+    }
+  },
+  {
+    "model": "shopper.product",
+    "pk": 4,
+    "fields": {
+      "product_id": "4",
+      "stock_pcs": 2,
+      "price": 1899 ,
+      "shop_id": "ps",
+      "vip": "True"
+    }
+  },
+  {
+    "model": "shopper.product",
+    "pk": 5,
+    "fields": {
+      "product_id": "5",
+      "stock_pcs": 8,
+      "price": 35,
+      "shop_id": "ms",
+      "vip": "False"
+    }
+  },
+  {
+    "model": "shopper.product",
+    "pk": 6,
+    "fields": {
+      "product_id": "6",
+      "stock_pcs": 5,
+      "price": 60,
+      "shop_id": "um",
+      "vip": "False"
+    }
+  },
+  {
+    "model": "shopper.product",
+    "pk": 7,
+    "fields": {
+      "product_id": "7",
+      "stock_pcs": 5,
+      "price": 800,
+      "shop_id": "ps",
+      "vip": "True"
+    }
+  }
+]

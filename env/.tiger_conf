@@ -1,0 +1,16 @@
+POSTGRES_USER=vincent-tiger
+POSTGRES_PASSWORD=pass1234
+POSTGRES_DB=tiger
+POSTGRES_PORT=5432
+POSTGRES_SERVICE=docker.for.mac.host.internal
+
+APP_DEBUG=False
+APP_LOG_LEVEL=INFO
+
+# For RabbitMQ used by celery
+RABBITMQ_HOST=ghost-rabbitmq
+RABBITMQ_DEFAULT_USER=ghost
+RABBITMQ_DEFAULT_PASS=pass1234
+RABBITMQ_DEFAULT_VHOST=ghost_vhost
+BROKER_URL=amqp://celery:password123@rabbitmq:5672/my_vhost
+
