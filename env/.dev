@@ -3,9 +3,9 @@ TZ=Asia/Singapore
 C_FORCE_ROOT=True
 
 EMAIL_HOST=smtp.gmail.com
-EMAIL_HOST_USER=notifier@unnotech.com
-EMAIL_HOST_PASSWORD=7rKV*DKe1
+EMAIL_HOST_USER=notifier@urmart.com
+EMAIL_HOST_PASSWORD=7rKV*DKe12
 EMAIL_PORT=587
-DEFAULT_TO_EMAIL=notifier@unnotech.com
+DEFAULT_TO_EMAIL=notifier@urmart.com
 
 ENV=local
