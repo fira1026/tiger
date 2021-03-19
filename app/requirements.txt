@@ -1,5 +1,5 @@
 uwsgi==2.0.18
-Django==2.2
+Django==2.2.18
 psycopg2==2.8.3
 requests==2.21.0
 python-dateutil==2.8.0
